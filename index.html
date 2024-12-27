@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f4f9;
+            color: #333;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 56px;
+            margin: 20px 0;
+        }
+
+        .stats-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .stat-box {
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px 25px;
+            text-align: center;
+            flex: 1;
+            min-width: 150px;
+            max-width: 200px;
+        }
+
+        .stat-box .large-text {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .stat-box .small-text {
+            font-size: 36px;
+            color: #555;
+            margin: 10px 0 0;
+        }
+
+        .description {
+            font-size: 18px;
+            margin: 20px 15px;
+            color: #666;
+            max-width: 600px;
+        }
+
+        .play-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 15px 25px;
+            font-size: 22px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+            margin-bottom: 20px;
+            text-decoration: none;
+        }
+
+        .play-button:hover {
+            background-color: #0056b3;
+        }
+
+        .ad-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .ad {
+            width: 720px;
+            height: 90px;
+            background-color: #ccc;
+            border: 1px solid gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: -10px;
+            font-size: 18px;
+            color: #333;
+            position: relative;
+        }
+
+        .ad .report-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: gray;
+            border: none;
+            cursor: pointer;
+            font-size: 12px;
+            color: white;
+            text-decoration: underline;
+            border-radius: 0 0 0 5px;
+        }
+
+        .ad .report-button:hover {
+            color: #555;
+        }
+
+        .ad-text {
+            font-size: 14px;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 48px;
+            }
+
+            .stat-box {
+                padding: 15px 20px;
+            }
+
+            .stat-box .large-text {
+                font-size: 40px;
+            }
+
+            .stat-box .small-text {
+                font-size: 32px;
+            }
+
+            .play-button {
+                font-size: 20px;
+                padding: 10px 20px;
+            }
+
+            .ad {
+                width: 100%;
+                max-width: 90%;
+                height: 75px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome!</h1>
+
+    <div class="stats-container">
+        <div class="stat-box">
+            <p class="large-text">N/A</p>
+            <p class="small-text">Users</p>
+        </div>
+        <div class="stat-box">
+            <p class="large-text">N/A</p>
+            <p class="small-text">Games</p>
+        </div>
+        <div class="stat-box">
+            <p class="large-text">N/A</p>
+            <p class="small-text">Years</p>
+        </div>
+    </div>
+
+    <p class="description">
+        I am an experienced game site maker, returning after a couple months to make a new site.
+    </p>
+
+    <a href="/gs.html" class="play-button">Play Now</a>
+
+    <div class="ad-box">
+        <div class="ad">
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : 'b5c8d1d118e03cdbd7e68148db3a0655',
+                    'format' : 'iframe',
+                    'height' : 90,
+                    'width' : 728,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="//www.highperformanceformat.com/b5c8d1d118e03cdbd7e68148db3a0655/invoke.js"></script>
+            <button class="report-button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSd7m5YojcySEVivoQyKwLtjPnGodjJ9EAfvYYtOe26PPk-RyA/viewform', '_blank')" title="Report Ad">⚠</button>
+        </div>
+        <p class="ad-text">Ads help keep this site free</p>
+    </div>
+    <script src="adb.js"></script>
+</body>
+</html>
