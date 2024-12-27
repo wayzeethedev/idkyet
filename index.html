@@ -101,7 +101,7 @@
             position: relative;
         }
 
-        .ad .report-button {
+        .report-button {
             position: absolute;
             top: 0;
             right: 0;
@@ -114,13 +114,27 @@
             border-radius: 0 0 0 5px;
         }
 
-        .ad .report-button:hover {
+        .report-button:hover {
             color: #555;
         }
 
         .ad-text {
             font-size: 14px;
             color: #666;
+        }
+
+        .ad-320-50 {
+            width: 320px;
+            height: 50px;
+            background-color: #ccc;
+            border: 1px solid gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: -10px;
+            font-size: 18px;
+            color: #333;
+            position: relative;
         }
 
         @media (max-width: 768px) {
@@ -144,11 +158,17 @@
                 font-size: 20px;
                 padding: 10px 20px;
             }
+        }
 
+        @media (max-width: 748px) {
             .ad {
-                width: 100%;
-                max-width: 90%;
-                height: 75px;
+                display: none;
+            }
+        }
+
+        @media (min-width: 748px) {
+            .ad-320-50 {
+                display: none;
             }
         }
     </style>
@@ -190,6 +210,19 @@
                 };
             </script>
             <script type="text/javascript" src="//www.highperformanceformat.com/b5c8d1d118e03cdbd7e68148db3a0655/invoke.js"></script>
+            <button class="report-button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSd7m5YojcySEVivoQyKwLtjPnGodjJ9EAfvYYtOe26PPk-RyA/viewform', '_blank')" title="Report Ad">⚠</button>
+        </div>
+        <div class="ad-320-50">
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : 'a467f3120ec40d966e0daee354da6154',
+                    'format' : 'iframe',
+                    'height' : 50,
+                    'width' : 320,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="//www.highperformanceformat.com/a467f3120ec40d966e0daee354da6154/invoke.js"></script>
             <button class="report-button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSd7m5YojcySEVivoQyKwLtjPnGodjJ9EAfvYYtOe26PPk-RyA/viewform', '_blank')" title="Report Ad">⚠</button>
         </div>
         <p class="ad-text">Ads help keep this site free</p>
