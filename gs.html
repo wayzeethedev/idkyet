@@ -26,6 +26,7 @@
             justify-content: center;  /* Center content horizontally */
             align-items: center;      /* Center content vertically */
             padding: 10px;
+            overflow: scroll;
         }
         .box {
             width: 150px;
@@ -129,6 +130,23 @@
                 width: calc(100vw - 10px);
             }
         }
+
+        @media (max-width: 525px) {
+            .ad-160-300 {
+                display: none;
+            }
+
+            .ad-160-600 {
+                display: none;
+            }
+
+            .ad-content {
+                display: none;
+            }
+            .content {
+                width: 100vw;
+            }
+        }
     </style>
 </head>
 <body>
@@ -143,6 +161,12 @@
             <a href="/play.html?id=drift-hunters">
                 <img src="https://drifthunters2.io/data/image/favicon.png">
                 <p>Drift Hunters</p>
+            </a>
+        </div>
+        <div class="box">
+            <a href="/play.html?id=idle-breakout">
+                <img src="https://play-lh.googleusercontent.com/e5jzYTn7Mjh9Ghn-DFpVedkOlRfSOyCS2AFgXdTrADIuuUbjx6vP6r_YOM2j5m7uLQ">
+                <p>Idle Breakout</p>
             </a>
         </div>
         <div class="box">
